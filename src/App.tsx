@@ -19,10 +19,12 @@ const images = [
 ];
 
 const perPage = 5;
+const defaultImageWidth = 116;
+const defaultImageGap = 2;
 
 function App() {
   const [offset, setOffset] = useState(0);
-  const totalImageWidth = 116 + 2;
+  const totalImageWidth = defaultImageWidth + defaultImageGap;
   const totalWidth = totalImageWidth * images.length;
   const topOffset = totalWidth - (perPage + 1) * totalImageWidth;
   const onScroll = (e: ChangeEvent<HTMLInputElement>) => {
