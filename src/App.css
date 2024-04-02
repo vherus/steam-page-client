@@ -4,6 +4,15 @@
   grid-template-columns: 1fr 940px 1fr;
 }
 
+a {
+  color: #67c1f5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
 main {
   grid-area: main;
 }
@@ -71,6 +80,7 @@ main {
   display: grid;
   grid-template-columns: 600px 1fr;
   gap: 16px;
+  background: linear-gradient(to right, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
 }
 
 .game-highlights .right-col {
@@ -98,6 +108,30 @@ main {
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   color: #c6d4df;
+}
+
+.game-highlights .right-col > .glance {
+  display: grid;
+  grid-template-columns: 104px 1fr;
+  gap: 10px;
+}
+
+.game-highlights .right-col > .glance .subtitle, .game-highlights .right-col > .glance .summary {
+  display: grid;
+  grid-template-rows: 16px;
+  gap: 10px;
+}
+
+.game-highlights .right-col > .glance .subtitle {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #556772;
+}
+
+.game-highlights .right-col > .glance .summary {
+  font-size: 12px;
+  line-height: 16px;
+  color: #8f98a0;
 }
 
 .game-highlights .left-col {

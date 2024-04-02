@@ -25,9 +25,22 @@ function App() {
               <img src={dd2}/>
             </div>
             <div className='game-description'>
-            Dragon’s Dogma 2 is a single player, narrative driven action-RPG that challenges the players to choose their own experience – from the appearance of their Arisen, their vocation, their party, how to approach different situations and more - in a truly immersive fantasy world. 
+              Dragon’s Dogma 2 is a single player, narrative driven action-RPG that challenges the players to choose their own experience – from the appearance of their Arisen, their vocation, their party, how to approach different situations and more - in a truly immersive fantasy world. 
             </div>
-            <div></div>
+            <div className='glance'>
+              <div className='subtitle'>
+                <div>ALL REVIEWS:</div>
+                <div>RELEASE DATE:</div>
+                <div>DEVELOPER:</div>
+                <div>PUBLISHER:</div>
+              </div>
+              <div className='summary'>
+                <div>Mixed</div>
+                <div>22 Mar, 2024</div>
+                <div><a href="#">CAPCOM Co., Ltd.</a></div>
+                <div><a href="#">CAPCOM Co., Ltd.</a></div>
+              </div>
+            </div>
             <div></div>
           </section>
         </article>
