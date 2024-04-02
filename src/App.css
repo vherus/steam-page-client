@@ -142,5 +142,20 @@ main {
 }
 
 .game-highlights .left-col > div {
-  background-color: white;
+  
+}
+
+.highlight-strip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 116px;
+  gap: 4px;
+  overflow-x: scroll;
+  overscroll-behavior-inline: contain;
+  scrollbar-color: red orange;
+}
+
+.highlight-strip-element img {
+  width: 115px;
+  height: 65px;
 }

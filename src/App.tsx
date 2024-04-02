@@ -17,7 +17,35 @@ function App() {
             <div className='highlight'>
               <img src={gryphon} />
             </div>
-            <div></div>
+            <div className='highlight-strip'>
+              <div className='highlight-strip-element'>
+                <img src={gryphon} />
+              </div>
+              <div className='highlight-strip-element'>
+                <img src={gryphon} />
+              </div>
+              <div className='highlight-strip-element'>
+                <img src={gryphon} />
+              </div>
+              <div className='highlight-strip-element'>
+                <img src={gryphon} />
+              </div>
+              <div className='highlight-strip-element'>
+                <img src={gryphon} />
+              </div>
+              <div className='highlight-strip-element'>
+                <img src={gryphon} />
+              </div>
+              <div className='highlight-strip-element'>
+                <img src={gryphon} />
+              </div>
+              <div className='highlight-strip-element'>
+                <img src={gryphon} />
+              </div>
+              <div className='highlight-strip-element'>
+                <img src={gryphon} />
+              </div>
+            </div>
             <div></div>
           </section>
           <section className='right-col'>
