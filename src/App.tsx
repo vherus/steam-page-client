@@ -1,9 +1,9 @@
-import "./App.css";
-import PageTitle from "./components/PageTitle";
-import StoreNav from "./components/StoreNav";
-import gryphon from "./assets/gryphon.jpg";
-import dd2 from "./assets/dd2.jpg";
-import { ChangeEvent, useState } from "react";
+import "./App.css"
+import PageTitle from "./components/PageTitle"
+import StoreNav from "./components/StoreNav"
+import gryphon from "./assets/gryphon.jpg"
+import dd2 from "./assets/dd2.jpg"
+import { ChangeEvent, useState } from "react"
 
 const images = [
   gryphon,
@@ -16,21 +16,21 @@ const images = [
   gryphon,
   gryphon,
   gryphon,
-];
+]
 
-const perPage = 5;
-const defaultImageWidth = 116;
-const defaultImageGap = 2;
+const perPage = 5
+const defaultImageWidth = 116
+const defaultImageGap = 2
 
 function App() {
-  const [offset, setOffset] = useState(0);
-  const totalImageWidth = defaultImageWidth + defaultImageGap;
-  const totalWidth = totalImageWidth * images.length;
-  const topOffset = totalWidth - (perPage + 1) * totalImageWidth;
+  const [offset, setOffset] = useState(0)
+  const totalImageWidth = defaultImageWidth + defaultImageGap
+  const totalWidth = totalImageWidth * images.length
+  const topOffset = totalWidth - (perPage + 1) * totalImageWidth
   const onScroll = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    setOffset(((Number(value) * topOffset) / 100) * -1);
-  };
+    setOffset(((Number(value) * topOffset) / 100) * -1)
+  }
 
   return (
     <div className="container">
@@ -63,6 +63,7 @@ function App() {
                 className="highlight-slider-track"
                 onChange={(e) => onScroll(e)}
                 defaultValue={offset}
+                title=""
               />
               <div className="btn btn-right"></div>
             </div>
