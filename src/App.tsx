@@ -5,18 +5,7 @@ import gryphon from "./assets/gryphon.jpg";
 import dd2 from "./assets/dd2.jpg";
 import { ChangeEvent, useState } from "react";
 
-const images = [
-  gryphon,
-  gryphon,
-  gryphon,
-  gryphon,
-  gryphon,
-  gryphon,
-  gryphon,
-  gryphon,
-  gryphon,
-  gryphon,
-];
+const images = Array(10).fill(gryphon);
 
 const perPage = 5;
 const defaultImageWidth = 116;
