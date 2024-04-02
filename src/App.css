@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-areas: '. main .';
+  grid-template-areas: ". main .";
   grid-template-columns: 1fr 940px 1fr;
 }
 
@@ -18,8 +18,13 @@ main {
 }
 
 .store-nav {
-  background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
-  box-shadow: 0 0 3px rgba( 0, 0, 0, 0.4);
+  background: linear-gradient(
+    90deg,
+    rgba(62, 103, 150, 0.919) 11.38%,
+    rgba(58, 120, 177, 0.8) 25.23%,
+    rgb(15, 33, 110) 100%
+  );
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
   height: 35px;
   margin: 16px 0;
 }
@@ -66,7 +71,7 @@ main {
 
 .btn-blue:hover {
   color: #fff !important;
-  background: linear-gradient( -60deg, #417a9b 5%,#67c1f5 95%);
+  background: linear-gradient(-60deg, #417a9b 5%, #67c1f5 95%);
 }
 
 .btn-blue span {
@@ -80,7 +85,11 @@ main {
   display: grid;
   grid-template-columns: 600px 1fr;
   gap: 16px;
-  background: linear-gradient(to right, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
 }
 
 .game-highlights .right-col {
@@ -116,7 +125,8 @@ main {
   gap: 10px;
 }
 
-.game-highlights .right-col > .glance .subtitle, .game-highlights .right-col > .glance .summary {
+.game-highlights .right-col > .glance .subtitle,
+.game-highlights .right-col > .glance .summary {
   display: grid;
   grid-template-rows: 16px;
   gap: 10px;
@@ -138,21 +148,49 @@ main {
   display: grid;
   grid-template-rows: 337px 69px 18px;
   gap: 6px;
-
+  overflow: hidden;
 }
 
-.game-highlights .left-col > div {
-  
+.highlight-strip-container {
+  position: relative;
+}
+
+.highlight-slider {
+  height: 18px;
+  display: grid;
+  grid-template-columns: 38px 1fr 38px;
+}
+
+.highlight-slider .btn {
+  background-color: rgba(35, 60, 81, 0.4);
+  border-radius: 3px;
+}
+
+.highlight-slider-track {
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.highlight-slider-track::-webkit-slider-thumb {
+  background-color: rgba(35, 60, 81, 0.4);
+  appearance: none;
+  height: 18px;
+  width: 60px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.highlight-slider-track::-webkit-slider-thumb:hover {
+  background-color: #3d6c8d;
 }
 
 .highlight-strip {
+  position: absolute;
+  left: 0;
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 116px;
   gap: 4px;
-  overflow-x: scroll;
-  overscroll-behavior-inline: contain;
-  scrollbar-color: red orange;
 }
 
 .highlight-strip-element img {
